@@ -7,7 +7,7 @@
 </head>
 <body>
 
-  <h1>SUBMARINE STATUS</h1>
+  <h1>SUBMARINE CONTROL ROOM</h1>
 
   <div id="stats">
     <div>Hull: <span id="hull">100</span></div>
@@ -15,7 +15,16 @@
     <div>Stability: <span id="stability">100</span></div>
   </div>
 
-  <button id="actionBtn">Ballast Override</button>
+  <h2>WARNINGS</h2>
+  <ul id="warnings"></ul>
+
+  <h2>ACTIONS</h2>
+  <div id="actions">
+    <button data-action="ballast">Ballast Override</button>
+    <button data-action="power">Power Reroute</button>
+    <button data-action="seal">Compartment Seal</button>
+    <button data-action="vent">Emergency Vent</button>
+  </div>
 
   <p id="message"></p>
 
